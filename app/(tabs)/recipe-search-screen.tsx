@@ -1,4 +1,6 @@
 import { StyleSheet, Image, Platform } from 'react-native';
+import { useIsFocused } from '@react-navigation/native';
+import { useEffect } from 'react';
 
 import { Collapsible } from '@/components/Collapsible';
 import { ExternalLink } from '@/components/ExternalLink';
@@ -7,7 +9,15 @@ import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { IconSymbol } from '@/components/ui/IconSymbol';
 
-export default function TabTwoScreen() {
+export default function RecipeSearchScreen() {
+  const isFocused = useIsFocused();
+
+  useEffect(() => {
+    if (isFocused) {
+      console.log('Recipe screen is active');
+      // do things like fetch data or start animations
+    }
+  }, [isFocused]);
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
