@@ -1,0 +1,16 @@
+/*//The props should be:
+//an image link for the pfp, the username, the bioText, and isSignedIn
+export function sideComponent(props) {
+    const { imageLink, user, bio, isSignedIn } = props;
+    return (
+            <img className="profilePicture" src={imageLink}
+                alt="Profile Picture" />
+    );
+}
+
+IndexComponent.defaultProps = {
+    imageLink: "https://static.vecteezy.com/system/resources/thumbnails/005/544/718/small_2x/profile-icon-design-free-vector.jpg",
+    user: "username12345",
+    bio: "asdadasadasfasdfasdaswerfwfwferrefwerewrwerererwrewercaddcapocmevimoasmv aoimacviocsdasdrandom paragraphs can be an excellent way",
+    isSignedIn: false
+}*/
